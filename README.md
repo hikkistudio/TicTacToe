@@ -7,6 +7,8 @@ And the main task of this application is to establish a development workflow.
 ![Gameplay and pop-up window](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_WndEndLvl.jpg "Gameplay and pop-up window")
 ![Options](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_Options.jpg "Options")
 
+(It should be launched from the "menu" scene)
+
 ---
 
 ## The game uses the following third-party materials
