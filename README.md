@@ -3,6 +3,10 @@ An experimental game where our team tries a variety of possibilities of the unit
 At the current moment(version 0.27), this is tic-tac-toe without any additions.
 And the main task of this application is to establish a development workflow.
 
+![Menu and game field](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_GameField.jpg "Menu and game field")
+![Gameplay and pop-up window](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_WndEndLvl.jpg "Gameplay and pop-up window")
+![Options](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_Options.jpg "Options")
+
 ---
 
 ## The game uses the following third-party materials
