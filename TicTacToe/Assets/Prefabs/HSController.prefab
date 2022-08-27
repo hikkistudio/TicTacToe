@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9152695881613387997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9152695881613387999}
+  - component: {fileID: 9152695881613387998}
+  m_Layer: 0
+  m_Name: HSController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9152695881613387999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152695881613387997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9152695881613387998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152695881613387997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab20b7849d498d4c9b75940847c9582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnToggleSound: {fileID: 1264898328888076046, guid: d714e39f10e763d4db241736e3e8f7a5, type: 3}
+  imgSoundOn: {fileID: 21300000, guid: d7f5c3c8d2f7f8e418522aac13fc09ce, type: 3}
+  imgSoundOff: {fileID: 21300000, guid: bb568ce03dcd26641b817a1439a4e9ea, type: 3}
+  objGameField: {fileID: 8093591100158330745, guid: 85e59a8990d463a40ae863655553f227, type: 3}
+  objCross: {fileID: 758700217940319924, guid: 82d721dcb6dcca644a5778069fac04db, type: 3}
+  objZero: {fileID: 2228887134950882834, guid: 7603b4b04e6fdb34883291c7c8c12cb7, type: 3}
+  objWndEndGame: {fileID: 3154465132200942414, guid: 61c765552933f0b4295386817e6add8c, type: 3}
