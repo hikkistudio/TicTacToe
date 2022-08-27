@@ -1,6 +1,6 @@
 # Tic Tac Toe
-An experimental game where our team tries a variety of possibilities of the unity engine
-At the current moment(version 0.27), this is tic-tac-toe without any additions.
+This is experimental game where our team tries a variety of possibilities of the unity engine.
+At the current moment(version 0.27), this game is standart tic-tac-toe without any additions.
 And the main task of this application is to establish a development workflow.
 
 ![Menu and game field](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_GameField.jpg "Menu and game field")
