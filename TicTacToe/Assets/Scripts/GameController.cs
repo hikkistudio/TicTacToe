@@ -779,7 +779,7 @@ public class GameController : MonoBehaviour
         //Перебираем различные варианты ходов и получаем результирующую ячейку
         nCell = СompStrategy();
 
-        //Debug.Log("CompStep: nCell = " + nCell);
+        Debug.Log("CompStep: nCell = " + nCell);
         //Debug.Log("GameBoard[nCell] = " + GameBoard[nCell]);
 
         //Подстраховочная функция
@@ -796,13 +796,32 @@ public class GameController : MonoBehaviour
             }
         }
 
-        //Заносим новое значение во внутренние структуры
-        GameBoard[nCell] = CellType.Comp;
+        //Если мы имеем всё ещё -1 в nCell это значит, что все ячейки заняты
+        //Выдаём ошибку в дебаг-логе и принудительно очищаем игровое поле
+        if (nCell == -1)
+        {
+            Debug.Log("Error game field overflow");
+            NewGame();
 
-        //Отрисовка на экране знака компа
-        //Минимальная задержка, чтобы ход компьютера не отображался мгновенно на экране
-        //На самом деле ход уже сделан, поэтому даже если пользователь за это время натыкает несколько ячеек это не отразится находе игры
-        StartCoroutine(CompStepDelayCoroutine(nCell, 0.2f));
+            //У нас есть корутины с эффектами и сообщением для пользователя, прекращаем их
+            StopAllCoroutines();
+
+            //Выбрасываем пользователя назад в меню
+            SceneManager.LoadScene("Menu");
+
+        }
+        else
+        {
+            //Всё нормально
+
+            //Заносим новое значение во внутренние структуры
+            GameBoard[nCell] = CellType.Comp;
+
+            //Отрисовка на экране знака компа
+            //Минимальная задержка, чтобы ход компьютера не отображался мгновенно на экране
+            //На самом деле ход уже сделан, поэтому даже если пользователь за это время натыкает несколько ячеек это не отразится находе игры
+            StartCoroutine(CompStepDelayCoroutine(nCell, 0.2f));
+        }
 
         //Debug.Log("CompStep: end");
     }
@@ -978,7 +997,8 @@ public class GameController : MonoBehaviour
 
         //Небольшая задержка нужна только в том случае если комп ходит первым
         //Но пускай ничего не держит пользователя
-        if (flCrossOrZero == false) {
+        if (flCrossOrZero == false)
+        {
             GState = GameStateType.Play;
         }
 
@@ -1041,7 +1061,7 @@ public class GameController : MonoBehaviour
 
             //Ещё одна задержка, это нужно для восприятия пользователя
             yield return new WaitForSeconds(fDelayStartGame);
-            
+
             //Debug.Log("5");
 
             //Запускаем главный игровой цикл
