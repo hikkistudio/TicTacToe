@@ -1,6 +1,6 @@
 # Tic Tac Toe
 This is experimental game where our team tries a variety of possibilities of the unity engine.
-At the current moment(version 0.27), this game is standart tic-tac-toe without any additions.
+At the current moment(version 0.28), this game is standart tic-tac-toe without any additions.
 And the main task of this application is to establish a development workflow.
 
 ![Menu and game field](https://github.com/hikkistudio/TicTacToe/blob/main/github_preview/GitHub_GameField.jpg "Menu and game field")
@@ -17,7 +17,7 @@ Compiled version of this game for windows(x86): [link](https://hikkistudio.com/#
 
 ### Graphics
 
-A picture of an unknown author used as wallpaper and icons. Reference to the anime «sora to ouji to noraneko heart».
+A picture of an unknown author used as background and icons. Reference to the anime «sora to ouji to noraneko heart».
 [Link](https://wallpapercrafter.com/114811-anime-nora-to-oujo-to-noraneko-heart-anime-girls-shachi-yuuri-green-eyes-simple-background-nekomimi.html)
 
 ### Sounds
